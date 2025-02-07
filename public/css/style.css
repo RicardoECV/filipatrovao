@@ -1,0 +1,214 @@
+/* Body */
+body {
+  max-width: 1617px;
+  margin: auto;  
+}
+
+/* Font Family */
+.freestyle {font-family: "Freestyle Script";}
+
+/* Font Color */
+.font_color {color: #95398B;}
+
+/* Toggler Mobile */
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+i {display: contents;}
+
+/* ------ Header ------- */
+.header_title {font-size: 40px;}
+.header_sub_title {font-size: 20px;}
+.header_title:hover {color: #95398B !important;}
+.header_sub_title:hover {color: #95398B !important;}
+
+.nav-link {border-right: 1px solid black;}
+.nav-link:last-of-type {border: 0;}
+.nav-link.active, .nav-link:hover {color: #EF988A !important;}
+/* ------ End Header ------- */
+
+/* ------ Home Page -------- */
+.home_text {white-space: pre-line;}
+
+.home_more_link {
+  background-color: #95398B;
+  padding: 10px;  
+  border-radius: 5px;  
+  color: white; 
+}
+
+.home_icon_animation {
+  animation: shake 0.4s;  
+}
+
+@keyframes shake {
+  0% {transform: rotate(15deg);}
+  25% {transform: rotate(-15deg);}
+  50% {transform: rotate(15deg);}
+  75% {transform: rotate(-15deg);}
+  100% {transform: rotate(15deg);} 
+} 
+/* ------ End Home Page -------- */
+
+/* ------ About Me Page -------- */
+/* Expertise Cards */
+.expertise_card_text {white-space: pre-line;}
+.transition-expertise {transition-duration: 0.5s;}
+
+.expertise_arrow_down {
+  transition-duration: 0.5s;  
+  transform: rotate(180deg);  
+}
+
+.aboutme_arrow {
+  height: 80vh;
+  width: 100%;
+  overflow-anchor: auto;  
+}
+
+/* My Journeys */
+.journey_img {
+  object-fit: contain;
+  max-width: 200px;
+}
+
+.journey_title {font-size: 30px;}
+.journey_logo {width: 75px;}
+/* ------ End About Me Page -------- */
+
+/* ------ Research Page ------ */
+.publication_text {white-space: pre-line;}
+.publication_button {  
+  background-color: #95398B;
+  padding: 10px;  
+  border-radius: 5px;  
+  color: white;
+  white-space: nowrap;
+}
+
+.project_title {font-size: 30px;}
+.project_logo {width: 75px;}
+.project_text {white-space: pre-line;}
+.project_img {
+  object-fit: contain;
+  max-width: 200px;
+}
+/* ------ End Research Page ------ */
+
+/* ------ Scicomm Page ------ */
+.scicomm_card_title {font-size: 16px;}
+.scicomm_activitie {white-space: pre-line;}
+/* ------ End Scicomm Page ------ */
+
+/* --------------- Media Querys --------------- */
+@media screen and (width < 1200px) {
+
+  /* --- Home Page --- */
+  .home_title {font-size: 28px;}
+  .home_text {font-size: 14px;}
+  .home_more_link {font-size: 14px;}
+
+  /*--- Header --- */
+  .nav_mobile_link {font-size: 14px;}
+
+}
+
+@media screen and (width < 992px) {
+
+  /* --- Header --- */
+  .header_title {font-size: 32px;}
+  .header_sub_title {font-size: 16px;} 
+  .nav_mobile_link {font-size: 20px;}
+  .navbar-toggler {
+    border: 0;
+    padding: 0;
+  }
+  .navbar-toggler-icon {width: 24px;}
+
+  /* --- Home Page --- */
+  .home_more_link {font-size: 12px;}
+
+  .aboutme_title {font-size: 32px;}
+  .aboutme_sub_title {font-size: 28px;}
+
+  /* --- About Me Page --- */
+  .expertise_card_title {font-size: 18px;}
+  .expertise_card_text {font-size: 14px;}
+
+  .journey_title {font-size: 22px;}
+  .journey_text {font-size: 14px;}
+
+  .personal_title {font-size: 18px;}
+
+  /* --- Research Page --- */
+  .research_title {font-size: 32px;}
+  .research_sub_title {font-size: 28px;}
+
+  .publication_text {font-size: 14px;}
+  .publication_button {font-size: 14px;}
+
+  .project_title {font-size: 22px;}
+  .project_text {font-size: 14px;}
+  
+  /* --- Scicomm Page --- */
+  .scicomm_title {font-size: 32px;}
+  .scicomm_sub_title {font-size: 28px;}
+ 
+  .scicomm_activitie {font-size: 14px;}
+  .scicomm_multimedia {font-size: 18px;}
+
+  /* --- Footer --- */
+  .footer_copy {font-size: 14px;}
+}
+
+
+@media screen and (width < 768px) {
+
+  /* --- Header --- */
+  .header_title {font-size: 28px;}
+  .header_sub_title {font-size: 12px;}
+  .navbar-toggler {
+    border: 0;
+    padding: 0;
+  }
+  .navbar-toggler-icon {width: 24px;}
+
+  /* --- Home Page --- */
+  .home_title {font-size: 24px;}
+  .home_text {font-size: 12px;}
+  .home_more_link {
+    font-size: 10px;
+    padding: 5px;
+  }
+  .home_icon {width: 35px;}
+
+  /* --- About Me Page --- */
+  .expertise_card_title {font-size: 16px;}
+  .expertise_card_text {font-size: 12px;}
+
+  .journey_text {font-size: 12px;}
+  .journey_logo {width: 50px;}
+
+  .personal_title {font-size: 16px;}  
+
+  /* --- Research Page --- */
+  .publication_text {font-size: 12px;}
+  .publication_button {font-size: 10px;}
+
+  .project_text {font-size: 12px;}
+  .project_logo {width: 50px;}  
+
+  /* --- Scicomm Page */
+  .scicomm_card_title {font-size: 14px;}
+  .scicomm_activitie {font-size: 12px;}
+  .scicomm_multimedia {font-size: 16px;}
+
+  /* --- Footer --- */
+  .footer_copy {font-size: 12px;} 
+}
+
