@@ -2,9 +2,11 @@
 <main class="container-fluid">
 
   <div class="row justify-content-center mt-5">
+    
     <div class="col-lg-5 col-12 d-flex">
       <img src="<?= $home_page['img']; ?>" class="index_img w-100 align-self-center" alt="">      
     </div>
+
     <div class="col-lg-5 col-11">
       <div class="m-5">
         <h2 class="freestyle home_title"><?= $home_page['title']; ?></h2>
@@ -15,7 +17,8 @@
           <a class="home_more_link text-decoration-none" href="aboutme.php">More...</a>
         </div>                        
       </div>    
-    </div>    
+    </div>  
+
   </div>
 
   <div class="row justify-content-center">

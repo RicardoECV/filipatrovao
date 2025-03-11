@@ -14,9 +14,7 @@
   </div>
 
   <div class="row justify-content-center gap-5">
-
     <?php foreach($expertise as $i => $e): ?>
-
       <div class="col-lg-2 col-md-4 col-8 p-0">
         <div class="card">
           <img src="<?= $e['img']; ?>" class="card-img-top" alt="<?= $e['img']; ?>">          
@@ -33,9 +31,7 @@
           </div>
         </div>
       </div>
-
     <?php endforeach; ?>
-
   </div>
 
   <div class="row justify-content-center mt-5">
@@ -52,12 +48,10 @@
 
     <div class="col-11 m-auto">
       <div class="container-fluid">
-
         <?php foreach($myjourneys as $m): ?>
-
           <div class="row">
-
             <div class="col-11 m-md-3 mt-3 m-auto">
+
               <div class="d-flex">
                 <img src="<?= $m["title_logo"]; ?>" class="journey_logo" alt="<?= $m["title_logo"]; ?>">
                 <h4 class="d-inline align-self-center m-0 freestyle journey_title"><?= $m["title"]; ?></h4>
@@ -71,15 +65,13 @@
                   <img src="<?= $m["img"]; ?>" class="align-self-center journey_img m-md-1 mb-5" alt="<?= $m["img"]; ?>">
                 <?php endif; ?>
               </div>
+
             </div>
-
           </div>
-
-        <?php endforeach; ?>        
-
+        <?php endforeach; ?> 
       </div>
-
     </div>
+
   </div>
 
   <div class="row justify-content-center mt-4">
@@ -89,9 +81,7 @@
   </div>
 
   <div class="row justify-content-around gap-md-0 gap-4">
-
-    <?php foreach($personal as $p): ?>
-    
+    <?php foreach($personal as $p): ?>    
       <div class="col-md-3 col-10 ">        
           <div class="card">
             <img src="<?= $p['img'] ?>" class="card-img-top" alt="<?= $p['img'] ?>">
@@ -100,9 +90,7 @@
             </div>
           </div>
       </div>
-
-    <?php endforeach; ?>
-    
+    <?php endforeach; ?>    
   </div>
 
 </main>

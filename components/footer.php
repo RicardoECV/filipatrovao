@@ -5,7 +5,6 @@
         Ricardo Valente | Designed by Filipa Trovão &copy <?= date("Y"); ?>
       </div>
     </div>
-
   </footer>
   <!-- Fim Footer -->
 

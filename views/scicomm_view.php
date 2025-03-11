@@ -7,10 +7,8 @@
     </div>
   </div>
 
-  <div class="row justify-content-lg-around justify-content-center gap-lg-0 gap-3"> 
-    
+  <div class="row justify-content-lg-around justify-content-center gap-lg-0 gap-3">     
     <?php foreach($scicommcards as $s): ?>
-
       <div class="col-md-4 col-lg-2 col-10">        
           <div class="card">
             <img src="<?= $s['img']; ?>" class="card-img-top" alt="<?= $s['img']; ?>">
@@ -19,9 +17,7 @@
             </div>
           </div>        
       </div>
-
-    <?php endforeach; ?>
-    
+    <?php endforeach; ?>    
   </div>
 
   <div class="row justify-content-center mt-4">
@@ -31,15 +27,11 @@
   </div>
 
   <div class="row justify-content-center">
-
-    <?php foreach($activities as $a): ?>
-      
+    <?php foreach($activities as $a): ?>      
       <div class="col-11">        
         <p class="me-4 scicomm_activitie"><?= $a['text'] ?></p> 
       </div>
-
-    <?php endforeach; ?>
-   
+    <?php endforeach; ?>   
   </div>
      
   <div class="row justify-content-center mt-4">
@@ -49,11 +41,8 @@
   </div>
     
   <div class="row p-0 justify-content-center">  
-
-    <?php foreach($multimediacontent as $m): ?>
-    
-      <div class="col-lg-3 col-xl-2 col-md-4 col-10 m-3">
-                
+    <?php foreach($multimediacontent as $m): ?>    
+      <div class="col-lg-3 col-xl-2 col-md-4 col-10 m-3">                
           <div class="card h-100">
             <a target="_blank" href="<?= $m['link']; ?>">
               <img src="<?= $m['img']; ?>" class="card-img-top" alt="<?= $m['img']; ?>">
@@ -65,12 +54,9 @@
                 </a>
               </h5>            
             </div>          
-          </div>  
-        
+          </div> 
       </div>
-
-    <?php endforeach; ?>
-   
+    <?php endforeach; ?>   
   </div>
 
 </main>
