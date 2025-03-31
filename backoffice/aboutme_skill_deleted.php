@@ -9,11 +9,11 @@
   
   if(!empty($_GET["id"])) {
     $id = $_GET["id"];
-    $aboutmeExpertise = getUniqueExpertise($id);  
+    iduSQL("DELETE FROM skills WHERE id=$id");    
   }    
  
   require_once("components/header.php");
-  require_once("views/aboutme_expertise_delete_view.php");
+  require_once("views/aboutme_skill_deleted_view.php");
   require_once("components/footer.php");
 
 ?>

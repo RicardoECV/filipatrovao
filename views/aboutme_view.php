@@ -14,19 +14,19 @@
   </div>
 
   <div class="row justify-content-center gap-5">
-    <?php foreach($expertise as $i => $e): ?>
+    <?php foreach($skills as $i => $skill): ?>
       <div class="col-lg-2 col-md-4 col-8 p-0">
         <div class="card">
-          <img src="<?= $e['img']; ?>" class="card-img-top" alt="<?= $e['img']; ?>">          
+          <img src="<?= $skill['img']; ?>" class="card-img-top" alt="<?= $skill['img']; ?>">          
           <div class="card-body">                   
             <h5 class="d-inline-flex gap-1 m-0">
               <p class="card-title expertise_card_title text-decoration-none m-0" data-bs-toggle="collapse" href="#collapseExample-<?= $i; ?>" role="button" aria-expanded="false" aria-controls="collapseExample-<?= $i; ?>" onclick="clickCard('<?= $i; ?>')">
-                <?= $e['title']; ?>
+                <?= $skill['title']; ?>
                 <img src="public/logos/icons8-arrow-up-24.png" alt="Arrow Icon" class="expertise_arrow_<?= $i; ?> transition-expertise">
               </p> 
             </h5>
             <div class="collapse" id="collapseExample-<?= $i; ?>">
-              <div class="card card-body expertise_card_text"><?= $e['text']; ?></div>
+              <div class="card card-body expertise_card_text"><?= $skill['text']; ?></div>
             </div>
           </div>
         </div>
@@ -34,7 +34,7 @@
     <?php endforeach; ?>
   </div>
 
-  <div class="row justify-content-center mt-5">
+  <div class="row justify-content-center mt-4">
     <div class="col-11 mt-5 freestyle">
       <h1 class="aboutme_sub_title"><?= $aboutme_page["sub_title_2"]; ?></h1>
     </div>

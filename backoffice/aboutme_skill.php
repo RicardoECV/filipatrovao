@@ -9,7 +9,7 @@
   
   if(!empty($_GET["id"])) {
     $id = $_GET["id"];    
-    $aboutmeExpertise = getUniqueExpertise($id);
+    $aboutmeSkill = getUniqueSkill($id);
 
     $form_2 = !empty($_GET["title"]) && !empty($_GET["img"]) && !empty($_GET["text"]); 
     
@@ -18,13 +18,13 @@
       $img = $_GET["img"];         
       $text = $_GET["text"];         
       
-      iduSQL("UPDATE expertise SET title='$title', img='$img', text='$text', editor_id=$user[id] WHERE id=$id");
-      $aboutmeExpertise = getUniqueExpertise($id);  
+      iduSQL("UPDATE skills SET title='$title', img='$img', text='$text', editor_id=$user[id] WHERE id=$id");
+      $aboutmeSkill = getUniqueSkill($id);  
     }    
   }
  
   require_once("components/header.php");
-  require_once("views/aboutme_expertise_view.php");
+  require_once("views/aboutme_skill_view.php");
   require_once("components/footer.php");
 
 ?>

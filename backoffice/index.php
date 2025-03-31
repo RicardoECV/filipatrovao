@@ -8,7 +8,8 @@
   $form = !empty($_POST["login"]) && !empty($_POST["pw"]);
 
   if($form) {
-    if(!empty(user_login($_POST["login"], $_POST["pw"]))) {
+    $user_login = htmlspecialchars($_POST["login"]);
+    if(!empty(user_login($user_login, $_POST["pw"]))) {
       exit();
     }
   }

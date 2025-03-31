@@ -8,7 +8,7 @@
   $user = checkLogin();  
 
   $aboutme_page_info = getAboutMe();
-  $expertise_info = getExpertise();
+  $skills_info = getSkills();
   $myjourney_info = getMyJourneys();
   $personal_info = getPersonal();
 

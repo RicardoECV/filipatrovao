@@ -8,6 +8,7 @@
   $user = checkLogin();  
 
   $research_page_info = getResearch();
+  $expertise_info = getExpertise();
   $publications_info = getPublications();
   $projects_info = getProjects();
   

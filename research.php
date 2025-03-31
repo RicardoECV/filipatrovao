@@ -5,6 +5,7 @@
   $home_page = getHomePage();
 
   $research_page = getResearch();
+  $expertise = getExpertise();
   $publications = getPublications();
   $projects = getProjects();
 

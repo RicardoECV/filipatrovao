@@ -38,6 +38,52 @@
       </table>
     </div>
 
+    <div class="col-12">
+      <h2 class="text-center mt-4">Expertise Table</h2>
+
+      <div class="col-12 text-center p-4">      
+        <a class="text-decoration-none text-white btn btn-primary" href="research_expertise_new.php">New Expertise</a>            
+      </div>
+
+      <table class="m-auto">
+
+        <tr class="text-center">   
+          <th>Image</th>
+          <th>Title</th>                       
+          <th>Text</th> 
+          <th>Creator</th> 
+          <th>Creation Date</th> 
+          <th>Edit</th>            
+          <th>Last Edit Date</th>          
+          <th>Settings</th> 
+        </tr>
+
+        <?php foreach($expertise_info as $e): ?>
+      
+          <tr>
+            
+            <td><img src="<?= $e["img"]; ?>" alt="<?= $e["img"]; ?>"></td>
+            <td><?= $e["title"]; ?></td>
+            <td><?= $e["text"]; ?></td>        
+            <td><?= getUserName($e["creator_id"])["name"]; ?></td> 
+            <td><?= $e["creation_date"]; ?></td>         
+            <td><?= getUserName($e["editor_id"])["name"]; ?></td> 
+            <td><?= $e["edit_date"]; ?></td>     
+            
+            <!-- Botões de Editar/Apagar -->
+            <td>
+              <a class="btn btn-primary" href="research_expertise.php?id=<?= $e["id"]; ?>">Edit</a>
+              <br><br>   
+              <a class="btn btn-danger" href="research_expertise_delete.php?id=<?= $e["id"]; ?>">Delete</a> 
+            </td>
+            
+          </tr>
+
+        <?php endforeach; ?>
+    
+      </table>
+    </div>
+
     <div class="col-12 mt-5">
       <h2 class="text-center mt-4">Publications Table</h2>
 

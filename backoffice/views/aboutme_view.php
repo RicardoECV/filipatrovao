@@ -21,8 +21,7 @@
           <th>Ações</th> 
         </tr>
       
-        <tr>
-          
+        <tr>          
           <td><?= $aboutme_page_info["title"]; ?></td>
           <td><?= $aboutme_page_info["sub_title_1"]; ?></td>
           <td><?= $aboutme_page_info["sub_title_2"]; ?></td>
@@ -33,18 +32,17 @@
           <!-- Botões de Editar/Apagar -->
           <td>
             <a class="btn btn-primary" href="aboutme_principal.php">Edit</a>  
-          </td>
-          
+          </td>          
         </tr>
     
       </table>
     </div>
 
     <div class="col-12">
-      <h2 class="text-center mt-4">Expertise Table</h2>
+      <h2 class="text-center mt-4">Skills Table</h2>
 
       <div class="col-12 text-center p-4">      
-        <a class="text-decoration-none text-white btn btn-primary" href="aboutme_expertise_new.php">New Expertise</a>            
+        <a class="text-decoration-none text-white btn btn-primary" href="aboutme_skill_new.php">New Skill</a>            
       </div>
 
       <table class="m-auto">
@@ -60,23 +58,23 @@
           <th>Settings</th> 
         </tr>
 
-        <?php foreach($expertise_info as $e): ?>
+        <?php foreach($skills_info as $skill): ?>
       
           <tr>
             
-            <td><img src="<?= $e["img"]; ?>" alt="<?= $e["img"]; ?>"></td>
-            <td><?= $e["title"]; ?></td>
-            <td><?= $e["text"]; ?></td>        
-            <td><?= getUserName($e["creator_id"])["name"]; ?></td> 
-            <td><?= $e["creation_date"]; ?></td>         
-            <td><?= getUserName($e["editor_id"])["name"]; ?></td> 
-            <td><?= $e["edit_date"]; ?></td>     
+            <td><img src="<?= $skill["img"]; ?>" alt="<?= $skill["img"]; ?>"></td>
+            <td><?= $skill["title"]; ?></td>
+            <td><?= $skill["text"]; ?></td>        
+            <td><?= getUserName($skill["creator_id"])["name"]; ?></td> 
+            <td><?= $skill["creation_date"]; ?></td>         
+            <td><?= getUserName($skill["editor_id"])["name"]; ?></td> 
+            <td><?= $skill["edit_date"]; ?></td>     
             
             <!-- Botões de Editar/Apagar -->
             <td>
-              <a class="btn btn-primary" href="aboutme_expertise.php?id=<?= $e["id"]; ?>">Edit</a>
+              <a class="btn btn-primary" href="aboutme_skill.php?id=<?= $skill["id"]; ?>">Edit</a>
               <br><br>   
-              <a class="btn btn-danger" href="aboutme_expertise_delete.php?id=<?= $e["id"]; ?>">Delete</a> 
+              <a class="btn btn-danger" href="aboutme_skill_delete.php?id=<?= $skill["id"]; ?>">Delete</a> 
             </td>
             
           </tr>

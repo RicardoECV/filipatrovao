@@ -3,17 +3,17 @@
   $header_footer = true;
 
   require_once("../requires.php");
-  $pagina_backoffice = "aboutme";
+  $pagina_backoffice = "research";
   
   $user = checkLogin(); 
   
   if(!empty($_GET["id"])) {
     $id = $_GET["id"];
-    iduSQL("DELETE FROM expertise WHERE id=$id");    
+    $aboutmeExpertise = getUniqueExpertise($id);  
   }    
  
   require_once("components/header.php");
-  require_once("views/aboutme_expertise_deleted_view.php");
+  require_once("views/research_expertise_delete_view.php");
   require_once("components/footer.php");
 
 ?>

@@ -5,7 +5,7 @@
   $home_page = getHomePage();
 
   $aboutme_page = getAboutMe();
-  $expertise = getExpertise();
+  $skills = getSkills();
   $myjourneys = getMyJourneys();
   $personal = getPersonal();
 

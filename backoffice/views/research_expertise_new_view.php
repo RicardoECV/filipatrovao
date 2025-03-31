@@ -28,7 +28,7 @@
       <!-- Butons de Edit/Back -->
       <div class="col-12 m-auto text-center">
         <button class="btn btn-success">Create</button>
-        <a href="aboutme.php" class="btn btn-danger">Back</a>
+        <a href="research.php" class="btn btn-danger">Back</a>
       </div>
 
     </form>   

@@ -1,10 +1,10 @@
 <main class="container-fluid">
 
   <div class="row">
-
-    <!-- Expertise Deleted Msg -->
+    
+    <!-- Skill Deleted Msg -->
     <div class="col-12 text-center p-4">
-      <h2 class="text-primary">Expertise Deleted Sucessfull</h2>
+      <h2 class="text-primary">Skill Deleted Sucessfull</h2>
     </div>
 
     <!-- Back to Aboutme Page -->
