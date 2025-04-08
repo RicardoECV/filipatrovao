@@ -9,7 +9,8 @@
 
   if($form) {
     $user_login = htmlspecialchars($_POST["login"]);
-    if(!empty(user_login($user_login, $_POST["pw"]))) {
+    $user_password = htmlspecialchars($_POST["pw"]);
+    if(!empty(user_login($user_login, $user_password))) {
       exit();
     }
   }
