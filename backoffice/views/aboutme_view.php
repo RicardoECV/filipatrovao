@@ -41,7 +41,7 @@
     <div class="col-12">
       <h2 class="text-center mt-4">Skills Table</h2>
 
-      <div class="col-12 text-center p-4">      
+      <div class="text-center p-4">      
         <a class="text-decoration-none text-white btn btn-primary" href="aboutme_skill_new.php">New Skill</a>            
       </div>
 
@@ -87,7 +87,7 @@
     <div class="col-12 mt-5">
       <h2 class="text-center mt-4">Journeys Table</h2>
 
-      <div class="col-12 text-center p-4">      
+      <div class="text-center p-4">      
         <a class="text-decoration-none text-white btn btn-primary" href="aboutme_myjourney_new.php">New Journey</a>            
       </div>
 
@@ -135,7 +135,7 @@
     <div class="col-12 mt-5">
       <h2 class="text-center mt-4">Personal Interests Table</h2>
 
-      <div class="col-12 text-center p-4">      
+      <div class="text-center p-4">      
         <a class="text-decoration-none text-white btn btn-primary" href="aboutme_personal_new.php">New Personal</a>            
       </div>
 
